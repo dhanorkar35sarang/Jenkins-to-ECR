@@ -15,7 +15,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 script{
-                 app = docker.build("hello")
+                 app = docker.build("hello") // repository name
                 }
             }
         }
